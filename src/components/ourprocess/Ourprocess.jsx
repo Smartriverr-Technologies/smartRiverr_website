@@ -1,61 +1,73 @@
-import React from "react";
-import "./Ourprocess.css";
+import React from 'react';
+import './OurProcess.css';
 
 const processSteps = [
   {
-    id: "01",
-    title: "Discovery Call & Design",
-    desc: "The initial step before jumping into the development stage is sitting together and analyzing your requirements and needs. And start designing the prototypes and UI designs.",
-    image: "/Images/img1.png",
+    id: 1,
+    title: 'Discovery Call & Design',
+    description:
+      'We start by sitting down together to understand your requirements thoroughly, then proceed to create prototypes and design the UI.',
+    image: '/Images/img1.jpg',
   },
   {
-    id: "02",
-    title: "Development",
-    desc: "Once this is done, the project manager prepares a plan for the next steps of development and ensures transparency in communication.",
-    image: "/Images/img1.png",
+    id: 2,
+    title: 'Development',
+    description:
+    'After this, the project manager outlines a detailed development plan and ensures clear, transparent communication with the client.' ,
+    image: '/Images/img2.jpg',
   },
   {
-    id: "03",
-    title: "Testing",
-    desc: "We run thorough tests to identify and fix bugs and polish the product before launch.",
-    image: "/images/step3.png",
+    id: 3,
+    title: 'Testing',
+    description:
+      'As an essential part of our development cycle, we conduct various testing procedures, including manual and automated tests, to deliver a flawless end solution.',
+    image: '/Images/img3.jpg',
   },
   {
-    id: "04",
-    title: "Deployment",
-    desc: "Once tested and approved, we deploy your product to the live environment securely.",
-    image: "/images/step4.png",
+    id: 4,
+    title: 'Deployment',
+    description:
+      'Once all key milestones are cleared, our smartRiverr server team supports you in deploying the application to the target environment.',
+    image: '/Images/img4.jpg',
   },
   {
-    id: "05",
-    title: "Support & Maintenance",
-    desc: "We monitor performance and are available for updates, enhancements, and ongoing support.",
-    image: "/images/step5.png",
+    id: 5,
+    title: 'Support & Maintenance',
+    description:
+      'To guarantee your satisfaction, we deliver a solution that meets every requirement—and our team is available 24/7 for support and maintenance.',
+    image: '/Images/img5.jpg',
   },
 ];
 
-const Ourprocess = () => {
+const OurProcess = () => {
   return (
     <section className="our-process">
-      <h2 className="process-heading">Our <strong>Process</strong>...</h2>
-      <p className="process-subtitle">
-        We have been recognized as the supreme development agency by several listing platforms.
-        And our process proves the same.
+      <h2>
+        Our <span>Process...</span>
+      </h2>
+      <p className="process-subtext">
+        Our process speaks volumes, earning us recognition as a top-tier development agency by several respected listing platforms.
       </p>
-      {processSteps.map((step, index) => (
-        <div className={`process-card ${index % 2 !== 0 ? 'reverse' : ''}`} key={index}>
-          <div className="step-number">{step.id}</div>
-          <div className="step-content">
-            <img src={step.image} alt={step.title} className="step-image" />
-            <div className="step-text">
-              <h3>{step.title}</h3>
-              <p>{step.desc}</p>
+      <div className="process-steps">
+        {processSteps.map((step, index) => (
+          <div
+            className={`process-card ${index % 2 === 0 ? 'left' : 'right'}`}
+            key={step.id}
+          >
+            <div className="step-number">{`0${step.id}`}</div>
+            <div className="step-content">
+              <img src={step.image} alt={step.title} className="step-image" />
+              <div className="step-text">
+                <h3>{step.title}</h3>
+                <div className="title-underline" />
+                <p>{step.description}</p>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </section>
   );
 };
 
-export default Ourprocess;
+export default OurProcess;

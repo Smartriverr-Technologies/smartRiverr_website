@@ -1,69 +1,153 @@
-.our-process-section {
-  padding: 60px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+.our-process {
+  text-align: center;
+  padding: 3rem 4.5rem;
+  background-color: #f4f2ef;
 }
 
-.section-title {
-  text-align: center;
-  font-size: 36px;
-  margin-bottom: 60px;
+.our-process h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.our-process h2 span {
+  font-weight: 700;
   color: #333;
+   /* font-family: 'Montserrat', sans-serif; */
+}
+
+.process-subtext {
+  color: #555;
+  max-width: 1000px;
+  margin: 0 auto 3rem;
+  font-size: 1rem;
+  color:#003366;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .process-card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 60px;
-  padding: 30px;
+  position: relative;
+  width: 65%;
   background: #fff;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-  border-radius: 16px;
-  max-width: 600px;
-  transition: 0.3s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.09);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* gap: 2rem; */
+  border-radius: 1rem;
+  /* margin: 0 auto; */
+}
+.process-card.left {
+  align-self: flex-start;
 }
 
 .process-card.right {
-  align-items: flex-end;
-  text-align: right;
-  margin-left: auto;
+  align-self: flex-end;
+}
+.process-card.left .step-content {
+  flex-direction: row;
 }
 
-.process-card.left {
-  align-items: flex-start;
-  text-align: left;
-  margin-right: auto;
+.process-card.right .step-content {
+  flex-direction: row-reverse;
 }
 
-.card-image img {
-  width: 300px;
-  max-width: 100%;
+.step-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.step-image {
+  width: 190px;
   height: auto;
-  margin-bottom: 20px;
 }
 
-.card-content h3 {
-  font-size: 24px;
-  color: #f9a825;
-  margin-bottom: 16px;
+.step-text {
+  text-align: left;
+  max-width: 600px;
+  padding: 0px 1.9rem;
 }
 
-.card-content p {
-  font-size: 16px;
-  color: #555;
-  line-height: 1.6;
+.step-text h3 {
+  color: #003366;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  position: relative;
+   font-family: 'Montserrat', sans-serif;
 }
 
-/* ✅ Responsive */
+.title-underline {
+  width: 60px;
+  height: 4px;
+  background-color: #003366;
+  margin-bottom: 1rem;
+  border-radius: 2px;
+}
+
+.step-number {
+  position: absolute;
+  font-size: 5rem;
+  font-weight: bold;
+  color: rgba(0, 51, 102, 0.12);
+  top: -45px;
+  left: -10px;
+}
+
+.process-card.right .step-number {
+  left: auto;
+  right: -30px;
+}
+
+
+
+
+
+
+
 @media (max-width: 768px) {
+.our-process {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #f4f2ef;
+}
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+  .step-content {
+    flex-direction: column !important;
+    text-align: center;
+  }
   .process-card {
-    align-items: center !important;
-    text-align: center !important;
-    max-width: 100%;
+    width: 100% !important;
+    align-self: center !important;
   }
 
-  .card-image img {
-    width: 80%;
+  .process-card.right .step-number,
+  .process-card.left .step-number {
+    left: 10px;
+    top: -45px;
+    right: auto;
+  }
+
+  .step-text {
+    text-align: center;
+    padding: 0px 5px;
+  }
+
+  .step-image {
+    width: 190px;
   }
 }

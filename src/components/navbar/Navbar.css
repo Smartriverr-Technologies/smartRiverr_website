@@ -2,11 +2,26 @@
   font-family: Arial, sans-serif;
   width: 100%;
   position: fixed;
-   position: fixed;
-     z-index: 999;
-     top: 0;
-      background-color: white;
+  z-index: 999;
+  top: 0;
+  background-color: white;
+  transition: transform 0.4s ease, opacity 0.4s ease;
 }
+/*start of navbar hidden*/
+.navbar-container.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Visible state */
+.navbar-container.visible {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+/*end of navbar hidden*/
+
 
 /* Top Bar */
 .top-bar {
@@ -38,11 +53,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 12px 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   height: 65px;
   position: relative;
-    z-index: 1000;
-   
+  z-index: 1000;
+
 }
 
 .logo img {
@@ -72,7 +87,7 @@
   display: none;
   position: absolute;
   background-color: white;
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   top: 100%;
   min-width: 150px;
   z-index: 10;
@@ -129,6 +144,7 @@
   cursor: pointer;
   border-radius: 4px;
 }
+
 .social-icons a {
   color: white;
   text-decoration: none;
@@ -139,11 +155,13 @@
   font-size: 24px;
   cursor: pointer;
 }
+
 @media (max-width: 768px) {
   .hamburger {
     display: block;
   }
-   .dropdown-content {
+
+  .dropdown-content {
     position: relative;
     box-shadow: none;
     transform: none;
@@ -152,7 +170,7 @@
     pointer-events: auto;
     transition: none;
   }
-  
+
 
   .nav-links {
     position: absolute;

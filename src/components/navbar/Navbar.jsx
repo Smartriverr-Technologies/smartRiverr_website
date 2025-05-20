@@ -8,13 +8,29 @@ import { FaLinkedinIn } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [showNavbar, setShowNavbar] = useState(false);
+
+    useEffect(() => {
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setShowNavbar(true);
+    } else {
+      setShowNavbar(false);
+    }
+  };
+
+  window.addEventListener('scroll', handleScroll);
+  return () => window.removeEventListener('scroll', handleScroll);
+}, []);
+   
     return (
-        <>
+        <>  
+        <div className={`navbar-container ${showNavbar ? "visible" : "hidden"}`}>
             <div className="navbar-container">
                 <div className="top-bar">
                     <div className="contact-info">
@@ -63,6 +79,7 @@ const Navbar = () => {
           <button className="quote-btn">GET A QUOTE</button>
           <button className="lang-btn">EN</button>
     </div> */}
+            </div>
             </div>
         </>
     )
