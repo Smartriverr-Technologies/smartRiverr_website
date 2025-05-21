@@ -4,29 +4,29 @@
   margin: auto;
 }
 
-.offer-header {
+/* .offer-header {
   text-align: center;
   margin-bottom: 40px;
-}
+} */
 
-.offer-subtitle {
+/* .offer-subtitle {
   color: orange;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 10px;
-}
+} */
 
-.offer-header h2 {
+/* .offer-header h2 {
   font-size: 28px;
   margin-bottom: 10px;
-}
+} */
 
-.offer-description {
+/* .offer-description {
   color: #555;
   font-size: 16px;
   max-width: 700px;
   margin: 0 auto;
-}
+} */
 
 .offer-grid {
   display: grid;
@@ -112,9 +112,9 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .offer-header h2 {
+  /* .offer-header h2 {
     font-size: 22px;
-  }
+  } */
 
   .offer-card {
     text-align: center;
