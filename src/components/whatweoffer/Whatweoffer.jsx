@@ -1,5 +1,5 @@
 
-import "./WhatWeOffer.css";
+import "./Whatweoffer.css";
 
 const offers = [
   {
@@ -53,7 +53,7 @@ const offers = [
   },
 ];
 
-const WhatWeOffer = () => {
+const Whatweoffer = () => {
   return (
     <section className="offer-section">
        <div className="header-container">
@@ -88,4 +88,4 @@ const WhatWeOffer = () => {
   );
 };
 
-export default WhatWeOffer;
+export default Whatweoffer;
