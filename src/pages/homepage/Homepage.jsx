@@ -10,7 +10,7 @@ const Homepage = () => {
     {/* <Navbar/> */}
     <Hero/>
     <OurProcess/>
-    {/* <Whatweoffer/> */}
+    <Whatweoffer/>
 
     
     </>
