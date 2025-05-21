@@ -7,23 +7,23 @@
   background-color: white;
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
-/*start of navbar hidden*/
+
 .navbar-container.hidden {
   transform: translateY(-100%);
   opacity: 0;
   pointer-events: none;
 }
 
-/* Visible state */
+
 .navbar-container.visible {
   transform: translateY(0);
   opacity: 1;
   pointer-events: auto;
 }
-/*end of navbar hidden*/
 
 
-/* Top Bar */
+
+
 .top-bar {
   background-color: #003366;
   color: white;
@@ -46,7 +46,7 @@
   gap: 10px;
 }
 
-/* Main Navbar */
+
 .main-navbar {
   background-color: white;
   display: flex;
@@ -78,7 +78,7 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-/* Dropdown */
+
 .dropdown {
   position: relative;
 }

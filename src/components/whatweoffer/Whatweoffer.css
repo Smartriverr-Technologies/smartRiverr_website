@@ -4,29 +4,9 @@
   margin: auto;
 }
 
-/* .offer-header {
-  text-align: center;
-  margin-bottom: 40px;
-} */
 
-/* .offer-subtitle {
-  color: orange;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-} */
 
-/* .offer-header h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
-} */
 
-/* .offer-description {
-  color: #555;
-  font-size: 16px;
-  max-width: 700px;
-  margin: 0 auto;
-} */
 
 .offer-grid {
   display: grid;
@@ -66,10 +46,10 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  /* gap: 10px; */
+ 
   padding: 5px 10px;
   flex-wrap: wrap;
-  /* border: 2px solid #f7a400;  */
+  
    font-family: 'Montserrat', sans-serif; 
    margin-bottom: 20px;  
 }
@@ -81,7 +61,7 @@
 
 .header-right {
   max-width: 55%;
-  /* text-align: left; ; */
+  
   margin-top: 16px;
 }
 
@@ -112,9 +92,7 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  /* .offer-header h2 {
-    font-size: 22px;
-  } */
+ 
 
   .offer-card {
     text-align: center;

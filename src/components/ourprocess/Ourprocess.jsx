@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './OurProcess.css';
 
 const processSteps = [

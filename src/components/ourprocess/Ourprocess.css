@@ -14,7 +14,7 @@
 .our-process h2 span {
   font-weight: 700;
   color: #333;
-   /* font-family: 'Montserrat', sans-serif; */
+   
 }
 
 .process-subtext {
@@ -40,10 +40,9 @@
   padding: 2rem;
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
-  /* gap: 2rem; */
+  
   border-radius: 1rem;
-  /* margin: 0 auto; */
+  
 }
 .process-card.left {
   align-self: flex-start;
@@ -107,11 +106,6 @@
   left: auto;
   right: -30px;
 }
-
-
-
-
-
 
 
 @media (max-width: 768px) {

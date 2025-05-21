@@ -1,4 +1,4 @@
-// import React from 'react'
+
 import './Navbar.css';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { FaEnvelope } from 'react-icons/fa';
@@ -75,10 +75,7 @@ const Navbar = () => {
                         <li><a href="#">CONTACT US</a></li>
                     </ul>
                 </div>
-                {/* <div className="nav-buttons">
-          <button className="quote-btn">GET A QUOTE</button>
-          <button className="lang-btn">EN</button>
-    </div> */}
+               
             </div>
             </div>
         </>
