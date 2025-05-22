@@ -126,6 +126,6 @@ textarea {
     flex-direction: column;
   }
   .checkbox-list {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1.5fr;
   }
 }
