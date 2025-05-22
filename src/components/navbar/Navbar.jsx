@@ -9,6 +9,7 @@ import { FaTwitter } from 'react-icons/fa';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import React, { useState , useEffect } from "react";
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -55,7 +56,7 @@ const Navbar = () => {
                         <li><a href="#">HOME</a></li>
 
                         <li className="dropdown">
-                            <a href="#">ABOUT US <MdKeyboardArrowDown /></a>
+                            <Link to="/about">ABOUT US <MdKeyboardArrowDown /></Link>
                             <div className="dropdown-content">
                                 <a href="#">Company</a>
                                 <a href="#">Team</a>
@@ -63,16 +64,16 @@ const Navbar = () => {
                         </li>
 
                         <li className="dropdown">
-                            <a href="#">SERVICES<MdKeyboardArrowDown /></a>
+                            <Link to="/services">SERVICES<MdKeyboardArrowDown /></Link>
                             <div className="dropdown-content">
                                 <a href="#">Web Development</a>
                                 <a href="#">Mobile Apps</a>
                             </div>
                         </li>
 
-                        <li><a href="#">CLIENTS</a></li>
-                        <li><a href="#">CAREERS</a></li>
-                        <li><a href="#">CONTACT US</a></li>
+                        <li><Link to="/clients">CLIENTS</Link></li>
+                        <li><Link to="/careers">CAREERS</Link></li>
+                        <li><Link to="/contact">CONTACT US</Link></li>
                     </ul>
                 </div>
                
