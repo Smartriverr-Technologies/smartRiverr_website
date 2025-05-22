@@ -6,7 +6,7 @@ const offers = [
     title: "Web Design & Development",
     description:
       "We offer flexible and interactive web design & development solutions that align with your business idea & elevate your brand presence. Our customized digital solutions promote engagement, convert visitors & maximize ROI. We offer robust websites on top-tier web development platforms, namely PHP, Laravel, WordPress, and more.",
-    image: "/Images/img7.png",
+    image: "/Images/img8.png",
     bgColor: "#d8d3ff",
   },
   {
