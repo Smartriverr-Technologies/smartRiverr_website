@@ -120,12 +120,14 @@ textarea {
 @media (max-width: 768px) {
   .form-layout {
     flex-direction: column;
+    
   }
+  
 
   .form-row {
     flex-direction: column;
   }
   .checkbox-list {
-    grid-template-columns: 1fr;
+    grid-template-columns: 0.84fr;
   }
 }
