@@ -8,7 +8,7 @@ import Whychooseus from '../../components/whychooseus/Whychooseus';
 const Homepage = () => {
   return (
     <>
-    {/* <Navbar/> */}
+    <Navbar/>
     <Hero/>
     <OurProcess/>
     <Whatweoffer/>
