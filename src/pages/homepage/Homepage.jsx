@@ -1,6 +1,6 @@
 
 import Hero from '../../components/hero/Hero';
-import OurProcess from '../../components/ourprocess/OurProcess';
+import OurProcess from '../../components/OurProcess/OurProcess';
 
 // import Whatweoffer from '../../components/whatweoffer/Whatweoffer';
 
