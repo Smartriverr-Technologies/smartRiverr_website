@@ -37,7 +37,7 @@ const features = [
 const Whychooseus = () => {
   return (
     <section className="why-choose">
-      <h2>Why Choose <span>Smartriverr</span>?</h2>
+      <h2>Why Choose <span>smartRiverr</span>?</h2>
       <p className="why-subtitle">
         Trusted by businesses for quality, reliability, and innovation.
       </p>
