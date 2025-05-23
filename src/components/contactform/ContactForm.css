@@ -15,9 +15,10 @@
 }
 
 .section-subtitle {
-  color: #f5a623;
+  color: #003366;
   font-weight: 600;
   margin-bottom: 8px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .section-title {
@@ -25,6 +26,7 @@
   font-weight: 700;
   color: #111;
   margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .section-description {
@@ -100,7 +102,7 @@ textarea {
 }
 
 .submit-btn {
-  background-color: #28a9ea;
+  background-color: #003366;
   color: white;
   font-size: 16px;
   padding: 14px 30px;

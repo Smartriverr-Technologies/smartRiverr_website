@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footer-col about">
           <img src="/path-to-your-logo.png" alt="Smartriverr Logo" className="footer-logo" />
           <p>
-            Smartriverr is a cutting-edge tech company providing web, mobile, and custom software
+            smartRiverr is a cutting-edge tech company providing web, mobile, and custom software
             solutions to help businesses grow online.
           </p>
         </div>
@@ -46,7 +46,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} Smartriverr. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} smartRiverr. All rights reserved.</p>
         <div className="footer-links">
           <a href="/privacy">Privacy Policy</a>
           <a href="/terms">Terms & Conditions</a>
