@@ -5,6 +5,8 @@ import Navbar from '../../components/navbar/Navbar';
 import Whatweoffer from '../../components/whatweoffer/Whatweoffer';
 import Whychooseus from '../../components/whychooseus/Whychooseus';
 import ContactForm from '../../components/contactform/ContactForm';
+// import Testimonial from '../../components/testimonial/Testimonial';
+import Footer from '../../components/footer/Footer';
 
 const Homepage = () => {
   return (
@@ -15,6 +17,8 @@ const Homepage = () => {
     <Whatweoffer/>
     <Whychooseus/>
     <ContactForm/>
+    {/* <Testimonial/> */}
+    <Footer/>
 
     
     </>
