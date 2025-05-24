@@ -33,7 +33,7 @@
 .why-card {
   background-color: white;
   border-radius: 16px;
-  padding: 30px 25px;
+  padding: 10px 25px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
   /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
    transition: box-shadow 0.3s ease;
@@ -51,7 +51,7 @@
 }
 
 .why-icon {
-  font-size: 2.7rem;
+  /* font-size: 2.7rem;
   margin-bottom: 15px;
   background-color: #eef2ff;
   width: 60px;
@@ -59,7 +59,12 @@
   line-height: 60px;
   border-radius: 50%;
   display: inline-block;
-  color: #4f46e5;
+  color: #4f46e5; */
+   width: 200px;
+  /* max-width: 65%; */
+  
+  height: auto;
+  margin-bottom: 5px;
 }
 
 .why-card h3 {

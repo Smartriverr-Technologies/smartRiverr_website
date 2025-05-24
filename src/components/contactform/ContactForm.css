@@ -26,6 +26,7 @@
   color: #003366;
   font-weight: 600;
   margin-bottom: 8px;
+  font-size: large;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -144,4 +145,12 @@ textarea {
   .checkbox-list {
     grid-template-columns: 1fr;
   }
+  .form-row input,
+textarea {
+  flex: 1;
+  padding: 12px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
 }
