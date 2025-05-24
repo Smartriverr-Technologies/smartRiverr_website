@@ -29,8 +29,8 @@ const Footer = () => {
           <h3>Contact</h3>
           <ul>
             <li>Email: info@smartriverr.com</li>
-            <li>Phone: +91 98765 43210</li>
-            <li>Address: 123 Innovation Street, Pune, India</li>
+            <li>Phone: +91 97618 04590</li>
+            <li>Address: 123 example Street, example, India</li>
           </ul>
         </div>
 

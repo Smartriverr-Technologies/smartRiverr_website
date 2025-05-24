@@ -13,6 +13,7 @@
 
 .why-choose h2 span {
   color: #003366; /* highlight color */
+  font-family: 'Montserrat', sans-serif;
 }
 
 .why-subtitle {
@@ -71,6 +72,7 @@
   font-size: 1.25rem;
   margin-bottom: 10px;
   color: #333;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .why-card p {
