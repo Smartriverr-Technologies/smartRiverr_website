@@ -6,8 +6,6 @@
 
 
 
-
-
 .offer-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -19,6 +17,10 @@
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center
 }
 
 .offer-card:hover {
@@ -26,9 +28,11 @@
 }
 
 .offer-image {
-  width: 100px;
+  width: 230px;
+  /* max-width: 65%; */
+  
   height: auto;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .offer-card h3 {
@@ -66,8 +70,8 @@
 }
 
 .highlighted-subtitle {
-  color: #f7a400;
-  font-weight: bold;
+  color: #003366;
+  font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 10px;
   font-size: 16px;

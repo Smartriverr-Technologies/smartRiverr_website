@@ -1,6 +1,6 @@
 
 import './OurProcess.css';
-
+import { motion } from 'framer-motion';
 const processSteps = [
   {
     id: 1,
@@ -42,13 +42,22 @@ const processSteps = [
 const OurProcess = () => {
   return (
     <section className="our-process">
+      <motion.div
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  viewport={{ once: true }}
+>
       <h2>
         Our <span>Process...</span>
       </h2>
       <p className="process-subtext">
         Our process speaks volumes, earning us recognition as a top-tier development agency by several respected listing platforms.
       </p>
+      </motion.div>
       <div className="process-steps">
+        
+        
         {processSteps.map((step, index) => (
           <div
             className={`process-card ${index % 2 === 0 ? 'left' : 'right'}`}

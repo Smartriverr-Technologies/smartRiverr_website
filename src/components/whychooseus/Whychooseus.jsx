@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Whychooseus.css';
+import Tilt from 'react-parallax-tilt';
 
 const features = [
   {
@@ -35,19 +36,29 @@ const features = [
 ];
 
 const Whychooseus = () => {
+   
   return (
     <section className="why-choose">
-      <h2>Why Choose <span>smartRiverr</span>?</h2>
+      <h2 >Why Choose <span>smartRiverr</span>?</h2>
       <p className="why-subtitle">
         Trusted by businesses for quality, reliability, and innovation.
       </p>
-      <div className="why-grid">
+      <div className="why-grid" >
         {features.map((feature, index) => (
+          <Tilt
+            glareEnable={true}
+            glareMaxOpacity={0.2}
+            glareColor="#ffffff"
+            glarePosition="all"
+            scale={1.05}
+            key={index}
+          >
           <div className="why-card" key={index}>
             <div className="why-icon">{feature.icon}</div>
             <h3>{feature.title}</h3>
             <p>{feature.description}</p>
           </div>
+          </Tilt>
         ))}
       </div>
     </section>

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css';
-
+import { motion } from 'framer-motion';
 const Hero = () => {
   return (
     <div className="hero-container">
@@ -9,11 +9,17 @@ const Hero = () => {
         Your browser does not support HTML5 video.
       </video>
 
-      <div className="hero-content">
+      <div className="hero-content" >
+         <motion.div
+      initial={{ opacity: 0, y: 50 }}       // Start state
+      animate={{ opacity: 1, y: 0 }}        // End state
+      transition={{ duration: 0.8 }}        // Animation speed
+    >
         <h1>We Build Digital Experiences That Grow Your Business</h1>
         <p>From idea to launch, we turn your vision into powerful digital products</p>
-        <button>Get a Free Quote</button>
-        <button>View Our Work</button>
+        <button><span>Get a Free Quote</span></button>
+        <button><span>View Our Work</span></button>
+        </motion.div>
       </div>
     </div>
   );

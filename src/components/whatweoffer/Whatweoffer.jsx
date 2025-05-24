@@ -5,51 +5,58 @@ const offers = [
   {
     title: "Web Design & Development",
     description:
-      "We offer flexible and interactive web design & development solutions that align with your business idea & elevate your brand presence. Our customized digital solutions promote engagement, convert visitors & maximize ROI. We offer robust websites on top-tier web development platforms, namely PHP, Laravel, WordPress, and more.",
-    image: "/Images/img8.png",
+      "We offer flexible and interactive web design & development solutions that align with your business idea & elevate your brand presence. ",
+    image: "/Images/WebDesigning.svg",
     bgColor: "#d8d3ff",
   },
   {
     title: "E-commerce Solutions",
     description:
-      "With our reliable eCommerce solutions, we offer retail software, custom eCommerce apps, custom app integration, mobility solutions, expert consultation & more.",
-    image: "/images/ecommerce.png",
+      "With our reliable eCommerce solutions, we offer retail software, custom eCommerce apps, custom app integration.",
+    image: "/Images/webdesign1.svg",
     bgColor: "#ffef9f",
   },
   {
     title: "100% Responsive Website",
     description:
       "Our responsive web design solutions make your websites flexible & customized so that the content easily adapts to the screen size of your device.",
-    image: "/images/responsive.png",
+    image: "/Images/webdevices.svg",
     bgColor: "#5cb5d8",
   },
   {
     title: "SAAS Application Development",
     description:
       "Our end-to-end SaaS solutions allow businesses to stay competitive & agile at affordable costs.",
-    image: "/images/saas.png",
-    bgColor: "#d6d6d6",
+    image: "/Images/saas1.svg",
+    bgColor: "#fddde6",
   },
   {
     title: "API Integrations",
     description:
       "We help your business with dedicated APIs for web applications and also integrate third-party systems.",
-    image: "/images/api.png",
+    image: "/Images/API.svg",
     bgColor: "#aee3f5",
   },
   {
     title: "Custom Application Solutions",
     description:
-      "Our experts deliver high-performance custom application solutions for web, mobile, cloud, and eCommerce platforms.",
-    image: "/images/custom-app.png",
+      "Our experts deliver high-performance custom application solutions.",
+    image: "/Images/custom.svg",
     bgColor: "#f9d3a4",
   },
   {
     title: "Custom WordPress & Shopify Website Development",
     description:
-      "With custom Shopify and WordPress website development services, we create a user-intuitive website that runs smoothly and provides optimal user experiences.",
-    image: "/images/wordpress-shopify.png",
-    bgColor: "#f1e6f9",
+      "With custom Shopify and WordPress website development services, we create a user-intuitive website  experiences.",
+    image: "/Images/wordpress.svg",
+    bgColor: "#5cb5d8",
+  },
+  {
+    title: "Mobile App Development",
+    description:
+      "With custom Shopify and WordPress website development services, we create a user-intuitive website that runs smoothly .",
+    image: "/Images/mobileapp.svg",
+    bgColor: "#d8d3ff",
   },
 ];
 
