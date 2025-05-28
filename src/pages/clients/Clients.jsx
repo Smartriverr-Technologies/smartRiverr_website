@@ -1,11 +1,11 @@
 import React from 'react';
 import './Clients.css';
 import { Link } from 'react-router-dom';
-import Navbar from '../../components/navbar/Navbar';
+// import Navbar from '../../components/navbar/Navbar';
 const Clients = () => {
   return (
     <>
-    <Navbar/>
+    {/* <Navbar/> */}
     <div className="coming-soon">
       <div className="coming-content">
         <h1>Our Clients</h1>
