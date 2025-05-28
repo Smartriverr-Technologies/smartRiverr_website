@@ -40,7 +40,7 @@ const offers = [
   {
     title: "Custom Application Solutions",
     description:
-      "Our experts deliver high-performance custom application solutions.",
+      "Our experts deliver high-performance custom application solutions tailored to your unique needs. ",
     image: "/Images/custom.svg",
     bgColor: "#f9d3a4",
   },
@@ -54,9 +54,23 @@ const offers = [
   {
     title: "Mobile App Development",
     description:
-      "With custom Shopify and WordPress website development services, we create a user-intuitive website that runs smoothly .",
+      "We build intuitive, high-performance mobile apps for iOS and Android that connect seamlessly with your audience.",
     image: "/Images/mobileapp.svg",
     bgColor: "#d8d3ff",
+  },
+  {
+    title: "Digial Marketing",
+    description:
+      "Our digital marketing strategies are designed to boost your online visibility and drive measurable results.",
+    image: "/Images/digitalmarketing.svg",
+    bgColor: "#ffef9f",
+  },
+  {
+    title: "SEO Services",
+    description:
+      "Our SEO services help your website rank higher on search engines and attract quality traffic.",
+    image: "/Images/seo.svg",
+    bgColor: "#f9d3a4",
   },
 ];
 
