@@ -71,14 +71,14 @@ const Contact = () => {
 
       <form ref={form} onSubmit={sendEmail} className="contact-form">
         <div className="form-row">
-          <input type="text" name='first_name' placeholder="First Name" />
-          <input type="text" name='last_name' placeholder="Last Name" />
+          <input type="text" name='applicant_firstname' placeholder="First Name" />
+          <input type="text" name='applicant_lastname' placeholder="Last Name" />
         </div>
         <div className="form-row">
-          <input type="email" name='email' placeholder="E mail" />
-          <input type="text" name='contact_number' placeholder="Contact Number" />
+          <input type="email" name='applicant_email' placeholder="E mail" />
+          <input type="text" name='applicant_phone' placeholder="Contact Number" />
         </div>
-        <textarea name='message' placeholder="Leave Your Message here..." rows="5"></textarea>
+        <textarea name='applicant_message' placeholder="Leave Your Message here..." rows="5"></textarea>
         <button type="submit">Submit</button>
       </form>
     </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Hero.css';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 const Hero = () => {
   return (
     <div className="hero-container">
@@ -17,8 +18,8 @@ const Hero = () => {
     >
         <h1>We Build Digital Experiences That Grow Your Business</h1>
         <p>From idea to launch, we turn your vision into powerful digital products</p>
-        <button><span>Get a Free Quote</span></button>
-        <button><span>View Our Work</span></button>
+       <Link to="/contact"> <button><span>Get a Free Quote</span></button></Link>
+        <Link><button><span>View Our Work</span></button></Link>
         </motion.div>
       </div>
     </div>

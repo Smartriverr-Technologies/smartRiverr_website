@@ -1,8 +1,28 @@
-import React from 'react'
+import React , { useRef, useState } from 'react'
 import './Applynow.css';
 import Navbar from '../../components/navbar/Navbar';
 import Footer from '../../components/footer/Footer';
+import emailjs from '@emailjs/browser';
 function Applynow() {
+   const form = useRef();
+  const [resumeName, setResumeName] = useState('');
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      'service_usdrqzj',
+      'template_fhjdgzp',
+      form.current,
+      'S5TYp9-UcJj5ksVxk'
+    ).then(() => {
+      alert('Application sent!');
+      form.current.reset(); 
+      setResumeName('');
+    }).catch((error) => {
+      alert('Failed to send: ' + error.text);
+    });
+  };
   return (
     <>
     <Navbar/>
@@ -29,15 +49,15 @@ function Applynow() {
         </p>
       </div>
 
-      <form className="cv-form">
+      <form className="cv-form" ref={form} onSubmit={sendEmail}>
         <div className="form-row">
-          <input type="text" placeholder="Your Name*" required />
-          <input type="email" placeholder="Your Email*" required />
+          <input type="text" name="applicant_firstname" placeholder="Your Name*" required />
+          <input type="email" name="applicant_email" placeholder="Your Email*" required />
         </div>
 
         <div className="form-row">
-          <input type="text" placeholder="Your Phone No.*" required />
-          <select required>
+          <input type="text" name="applicant_phone" placeholder="Your Phone No.*" required />
+          <select required name="applicant_gender">
             <option value="">Select Gender *</option>
             <option value="male">Male</option>
             <option value="female">Female</option>
@@ -46,7 +66,7 @@ function Applynow() {
         </div>
 
         <div className="form-row">
-          <select required>
+          <select required name="work_experience" >
             <option value="">Select Work Experience *</option>
             <option value="0-1">0-1 year</option>
             <option value="1-3">1-3 years</option>
@@ -55,18 +75,19 @@ function Applynow() {
         </div>
 
         <div className="form-row">
-          <input type="text" placeholder="Where Currently Residing ? *" required />
+          <input type="text" name="current_location" placeholder="Where Currently Residing ? *" required />
         </div>
 
         <div className="form-row">
-          <textarea rows="4" placeholder="Cover letter...."></textarea>
+          <textarea rows="4" name="cover_letter" placeholder="Cover letter...."></textarea>
         </div>
 
         <div className="form-row file-upload">
           <label>
             Upload Your Resume<span>*</span>
           </label>
-          <input type="file" required />
+          <input name="resume_file" type="file" onChange={(e) => setResumeName(e.target.files[0]?.name)} required />
+           <input type="hidden" name="resume_filename" value={resumeName} />
         </div>
 
         <div className="form-row checkbox-row">
