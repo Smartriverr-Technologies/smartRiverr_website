@@ -10,7 +10,7 @@ function Applynow() {
       <div className="apply-now-overlay">
         <div className="apply-now-content">
           <h4 className="highlight-text">EMPOWER YOUR FUTURE</h4>
-          <h1 className="main-heading">Apply Now</h1>
+          <h1 className="main-heading1">Apply Now</h1>
           <p className="description">
             At <strong>smartRiverr</strong>, we’re always looking for passionate, creative, and curious individuals. 
             Join us and take the first step toward building a meaningful and fulfilling career.
