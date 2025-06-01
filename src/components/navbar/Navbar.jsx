@@ -10,6 +10,8 @@ import { MdKeyboardArrowDown } from 'react-icons/md';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import React, { useState , useEffect } from "react";
 import { Link } from 'react-router-dom';
+import Logo from '../../../public/Images/Logo.png'
+// import Footer from '../footer/Footer';
 
 
 const Navbar = () => {
@@ -47,13 +49,13 @@ const Navbar = () => {
                 </div>
                 <div className="main-navbar">
                     <div className="logo">
-                        <img src="/logo.png" alt="logo" />
+                        <img src={Logo} alt="logo" />
                     </div>
                     <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
                         {menuOpen ? <FaTimes /> : <FaBars />}
                     </div>
                     <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
-                        <li><a href="#">HOME</a></li>
+                        <li><Link to="/">HOME</Link></li>
 
                         <li className="dropdown">
                             <Link to="/about">ABOUT US <MdKeyboardArrowDown /></Link>
@@ -79,6 +81,7 @@ const Navbar = () => {
                
             </div>
             </div>
+           
         </>
     )
 }

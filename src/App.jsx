@@ -9,6 +9,8 @@ import Services from './pages/services/Services.jsx';
 // import Contact from './pages/contact/Contact.jsx';
 import Careers from './pages/careers/Careers.jsx';
 import Contact from './pages/contactus/Contact.jsx';
+import Applynow from './pages/applynow/Applynow.jsx';
+// import ContactForm from './pages/contactform/Contactform.jsx';
 
 function App() {
   return (
@@ -23,6 +25,7 @@ function App() {
         <Route path='/services' element={<Services/>}/>
         <Route path='/careers' element={<Careers/>}/>
         <Route path='/contact' element={<Contact/>}/>
+        <Route path='/apply-now' element={<Applynow/>}/>
       </Routes>
     </Router>
      
