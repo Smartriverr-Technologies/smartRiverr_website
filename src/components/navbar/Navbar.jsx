@@ -38,7 +38,7 @@ const Navbar = () => {
                 <div className="top-bar">
                     <div className="contact-info">
                         <FaPhoneAlt /> <span>+91-9761804590</span>
-                        <FaEnvelope style={{ marginLeft: "20px" }} /> <span>info@smartriverr.com</span>
+                        <FaEnvelope style={{ marginLeft: "20px" }} /> <span>support@smartriverr.com</span>
                     </div>
                     <div className="social-icons">
                         <a href="https://www.linkedin.com/company/smartriverr/about/" target="_blank"><FaLinkedinIn /></a>

@@ -44,16 +44,16 @@ We’re just a message away from starting something amazing.
           <FaMapMarkerAlt className="icon" />
           <h4>Address</h4>
           <p>
-            XYZ, Andrew street,<br />
-            UM Nagar,<br />
-            Chennai-600017.
+           sector 73<br />
+            Noida,<br />
+            Uttar Pradesh.
           </p>
         </div>
         <div className="card">
           <FaPhoneAlt className="icon" />
           <h4>Contact Us</h4>
-          <p>+91-8765432120</p>
-          <p>helpsock123@gmail.com</p>
+          <p>+91-8458305670</p>
+          <p>support@smartriverr.com</p>
         </div>
         <div className="card">
           <FaLink className="icon" />
