@@ -41,10 +41,10 @@ const Navbar = () => {
                         <FaEnvelope style={{ marginLeft: "20px" }} /> <span>info@smartriverr.com</span>
                     </div>
                     <div className="social-icons">
-                        <a href=""><FaLinkedinIn /></a>
-                        <a href=""><FaFacebookF /></a>
-                        <a href=""><FaTwitter /></a>
-                        <a href=""><FaInstagram /></a>
+                        <a href="https://www.linkedin.com/company/smartriverr/about/" target="_blank"><FaLinkedinIn /></a>
+                        <a href="" target="_blank"><FaFacebookF /></a>
+                        <a href="" target="_blank"><FaTwitter /></a>
+                        <a href="https://www.instagram.com/smartriverr_tech/" target="_blank"><FaInstagram /></a>
                     </div>
                 </div>
                 <div className="main-navbar">

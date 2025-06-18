@@ -75,7 +75,7 @@ const Careers = () => {
           <p>
             At smartRiverr , we are dedicated to creating an environment that inspires and empowers each individual, encouraging a spirit of curiosity to explore, learn, and contribute something truly original and impactful.
           </p>
-          <button>Join Our Team</button>
+          <Link to="/apply-now"><button>Join Our Team</button></Link>
         </div>
       </div>
     </section>

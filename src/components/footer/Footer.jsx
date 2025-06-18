@@ -19,8 +19,8 @@ const Footer = () => {
             <li><a href="/">Home</a></li>
             <li><a href="/about">About Us</a></li>
             <li><a href="/services">Services</a></li>
-            <li><a href="/portfolio">Portfolio</a></li>
-            <li><a href="/testimonials">Testimonials</a></li>
+            {/* <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/testimonials">Testimonials</a></li> */}
             <li><a href="/contact">Contact</a></li>
           </ul>
         </div>
@@ -37,20 +37,20 @@ const Footer = () => {
         <div className="footer-col">
           <h3>Follow Us</h3>
           <div className="social-icons">
-             <a href="#"><FaFacebookF /></a>
-  <a href="#"><FaInstagram /></a>
-  <a href="#"><FaTwitter /></a>
-  <a href="#"><FaLinkedinIn /></a>
+             <a href="www.facebook.com" target="_blank"><FaFacebookF /></a>
+  <a href="https://www.instagram.com/smartriverr_tech/" target="_blank"><FaInstagram /></a>
+  <a href="www.twitter.com" target="_blank"><FaTwitter /></a>
+  <a href="https://www.linkedin.com/company/smartriverr/about/" target="_blank"><FaLinkedinIn /></a>
           </div>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} smartRiverr. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} smartRiverr Technologies. All rights reserved.</p>
         <div className="footer-links">
-          <a href="/privacy">Privacy Policy</a>
-          <a href="/terms">Terms & Conditions</a>
-          <a href="/legal">Legal</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Legal</a>
         </div>
       </div>
     </footer>

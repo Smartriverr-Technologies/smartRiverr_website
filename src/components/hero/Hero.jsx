@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Hero = () => {
   return (
     <div className="hero-container">
-      <video autoPlay loop muted playsInline className="hero-video">
+      <video autoPlay loop muted playsInline poster="/Images/Poster.png" className="hero-video">
         <source src="/river2.mp4" type="video/mp4" />
         Your browser does not support HTML5 video.
       </video>

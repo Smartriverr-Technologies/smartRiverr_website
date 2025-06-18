@@ -34,7 +34,8 @@ const Contact = () => {
     <div className="contact-page">
       <h2 className="heading">CONTACT US</h2>
       <p className="subheading">
-        In publishing and graphic design, is a placeholder text commonly used to demonstrate the visual
+         Let’s turn your ideas into powerful digital experiences.
+We’re just a message away from starting something amazing.
       </p>
       <div className="arrow">↓</div>
 
@@ -58,10 +59,10 @@ const Contact = () => {
           <FaLink className="icon" />
           <h4>Follow Us on</h4>
           <div className="social-icons1">
-            <a href="www.facebook.com"><FaFacebook /></a>
-            <a href="www.instagram.com"><FaInstagram /></a>
-            <a href="www.twitter.com"><FaTwitter /></a>
-            <a href="www.Linkedin.com"><FaLinkedin /></a>
+            <a href="www.facebook.com" target="_blank"><FaFacebook /></a>
+            <a href="https://www.instagram.com/smartriverr_tech/" target="_blank"><FaInstagram /></a>
+            <a href="www.twitter.com" target="_blank"><FaTwitter /></a>
+            <a href="https://www.linkedin.com/company/smartriverr/about/" target="_blank"><FaLinkedin /></a>
           </div>
         </div>
       </div>

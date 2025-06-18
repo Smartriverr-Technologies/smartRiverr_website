@@ -32,11 +32,11 @@ const ContactForm = () => {
           {/* Left Side - Input Fields */}
           <div className="form-left">
             <div className="form-row">
-              <input type="text" name="user_name" placeholder="Name" />
+              <input type="text" name="user_name" placeholder="Name" required/>
               <input type="email"  name="user_email" placeholder="Email" />
             </div>
             <div className="form-row">
-              <input type="text"  name="user_phone" placeholder="Phone" />
+              <input type="text"  name="user_phone" placeholder="Phone" required/>
               <input type="text" name="user_company" placeholder="Company or Brand Name" />
             </div>
             <textarea rows="5" name="user_message" placeholder="Message"></textarea>
