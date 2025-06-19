@@ -52,7 +52,7 @@ We’re just a message away from starting something amazing.
         <div className="card">
           <FaPhoneAlt className="icon" />
           <h4>Contact Us</h4>
-          <p>+91-8458305670</p>
+          <p>+91-9458305670</p>
           <p>support@smartriverr.com</p>
         </div>
         <div className="card">

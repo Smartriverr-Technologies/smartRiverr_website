@@ -29,7 +29,7 @@ const Footer = () => {
           <h3>Contact</h3>
           <ul>
             <li>Email: support@smartriverr.com</li>
-            <li>Phone: +91 84583 05670</li>
+            <li>Phone: +91 94583 05670</li>
             <li>Address: sector 73 , Noida , Uttar Pradesh</li>
           </ul>
         </div>

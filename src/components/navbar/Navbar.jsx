@@ -37,7 +37,7 @@ const Navbar = () => {
             <div className="navbar-container">
                 <div className="top-bar">
                     <div className="contact-info">
-                        <FaPhoneAlt /> <span>+91-9761804590</span>
+                        <FaPhoneAlt /> <span>+91-9458305670</span>
                         <FaEnvelope style={{ marginLeft: "20px" }} /> <span>support@smartriverr.com</span>
                     </div>
                     <div className="social-icons">
