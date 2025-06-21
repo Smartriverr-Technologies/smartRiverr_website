@@ -1,4 +1,5 @@
 import React from 'react';
+import Logo from '../../../public/Images/Company_Logo.png'
 import './Footer.css';
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 const Footer = () => {
@@ -6,7 +7,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-top">
         <div className="footer-col about">
-          <img src="/path-to-your-logo.png" alt="Smartriverr Logo" className="footer-logo" />
+          <img src={Logo} alt="Smartriverr Logo" className="footer-logo" />
           <p>
             smartRiverr is a cutting-edge tech company providing web, mobile, and custom software
             solutions to help businesses grow online.
@@ -22,6 +23,7 @@ const Footer = () => {
             {/* <li><a href="/portfolio">Portfolio</a></li>
             <li><a href="/testimonials">Testimonials</a></li> */}
             <li><a href="/contact">Contact</a></li>
+            <li><a href="/careers">Careers</a></li>
           </ul>
         </div>
 

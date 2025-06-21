@@ -26,9 +26,10 @@
 } */
  .footer-logo {
   width: 150px;
-  height: auto;
-  margin-bottom: 15px;
+  height: 100px;
+  margin-bottom: 1px;
   object-fit: contain;
+  /* margin-top: 10px; */
 }
 
 .footer-col h3 {
