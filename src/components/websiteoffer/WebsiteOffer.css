@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400&display=swap');
+
+:root {
+    /* Updated to a light theme color palette */
+    --bg-light: #f4f2ef;
+    --text-dark: #212529;
+    --text-muted: #6c757d;
+    --accent-blue: #003366;
+    --card-bg-light: #ffffff;
+    --card-shadow: rgba(0, 0, 0, 0.08);
+    --card-border-light: #dee2e6;
+}
+
+.offers-section {
+    /* Switched to a light background color */
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    font-family: 'Roboto', sans-serif;
+    padding: 4.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative; /* Needed for the background text pseudo-element */
+}
+
+/* New pseudo-element for the large background text */
+.offers-section::before {
+    content: 'Website Development';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Playfair Display', serif;
+    font-size: 15vw;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.06);
+    z-index: 1;
+    pointer-events: none;
+    /* text-align: center; Ensures the text doesn't interfere with mouse events */
+}
+
+.offers-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    z-index: 2; /* Keep header above background text */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.offers-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-dark); /* Updated text color */
+    margin-bottom: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.offers-subtitle {
+    font-size: 1.2rem;
+    color: var(--accent-blue); /* Updated accent color */
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.offers-grid-container {
+    perspective: 1000px;
+    /* z-index: 2; Keep grid above background text */
+}
+
+.offers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    transition: transform 0.1s ease-out;
+}
+
+.offer-card {
+    /* Updated card styling for the light theme */
+    background: var(--card-bg-light);
+    backdrop-filter: none; /* Removed blur effect */
+    border: 1px solid var(--card-border-light);
+    border-radius: 16px;
+    /* padding: 1.5rem 1rem; */
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 25px var(--card-shadow);
+}
+
+.offer-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px var(--card-shadow);
+    border-color: var(--accent-blue);
+}
+
+.offer-card-icon {
+    width: 250px;
+    height: 180px;
+    /* margin: 0 auto 1.5rem; */
+    stroke: var(--accent-blue); /* Updated icon color */
+    margin-bottom: 0px;
+}
+
+.offer-card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.75rem;
+    color: var(--text-dark); /* Updated text color */
+    /* margin-bottom: 1rem; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.offer-card-description {
+    color: var(--text-muted); /* Updated text color */
+    line-height: 1.6;
+    /* margin-bottom: 2rem; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.offer-card-link {
+    font-family: 'Roboto', sans-serif;
+    color: var(--accent-blue); /* Updated link color */
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.offer-card-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--accent-blue); /* Updated link underline color */
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.offer-card:hover .offer-card-link::after {
+    transform: scaleX(1);
+}
+
+@media (max-width: 960px) {
+    .offers-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .offers-section {
+        padding: 4rem 1rem;
+    }
+    .offers-title {
+        font-size: 2.5rem;
+    }
+    .offers-section::before {
+        font-size: 35vw;
+    }
+}

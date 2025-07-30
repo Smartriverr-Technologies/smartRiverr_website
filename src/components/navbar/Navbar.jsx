@@ -38,7 +38,7 @@ const Navbar = () => {
                 <div className="top-bar">
                     <div className="contact-info">
                         <FaPhoneAlt /> <span>+91-9458305670</span>
-                        <FaEnvelope style={{ marginLeft: "20px" }} /> <span>support@smartriverr.com</span>
+                        <FaEnvelope style={{ marginLeft: "20px" }} /> <span> support@smartriverr.com</span>
                     </div>
                     <div className="social-icons">
                         <a href="https://www.linkedin.com/company/smartriverr/about/" target="_blank"><FaLinkedinIn /></a>
@@ -65,20 +65,52 @@ const Navbar = () => {
                             </div>
                         </li>
 
-                        <li className="dropdown">
-                            <Link to="/services">SERVICES<MdKeyboardArrowDown /></Link>
-                            <div className="dropdown-content">
-                                <a href="#">Web Development</a>
-                                <a href="#">Mobile Apps</a>
-                            </div>
-                        </li>
+                        <li className="dropdown mega-dropdown">
+  <span>SERVICES <MdKeyboardArrowDown /></span>
+  <div className="mega-menu">
+    <div className="mega-left">
+      <h4>Application Solution</h4>
+      <p>Empowering businesses to meet their needs with innovative application solutions.</p>
+      <h4>Digital Marketing</h4>
+      <p>Optimize online visibility and grow business with our innovative digital solutions.</p>
+      <h4>Design Solution</h4>
+      <p>Transform your vision into captivating designs that engage your audience.</p>
+    </div>
+    <div className="mega-right">
+      <div className="mega-box">
+        <Link to="/web-development"><h5>Web Development</h5>
+        <p>Create intuitive, engaging, and high-quality web applications.</p></Link>
+      </div>
+      <div className="mega-box">
+        <h5>Mobile App Development</h5>
+        <p>Create dynamic iOS and Android apps for large audiences.</p>
+      </div>
+      <div className="mega-box">
+        <h5>Custom Application</h5>
+        <p>Enhance functionality with powerful APIs and integrations.</p>
+      </div>
+      <div className="mega-box">
+        <h5>Digital Marketing</h5>
+        <p>Automate workflows using custom AI/ML models.</p>
+      </div>
+      <div className="mega-box">
+        <h5>SaaS Application</h5>
+        <p>Build scalable SaaS products tailored to your users.</p>
+      </div>
+      <div className="mega-box">
+        <h5>API Development</h5>
+        <p>Integrate robust APIs to optimize performance and flexibility.</p>
+      </div>
+    </div>
+  </div>
+</li>
+
 
                         <li><Link to="/clients">CLIENTS</Link></li>
                         <li><Link to="/careers">CAREERS</Link></li>
                         <li><Link to="/contact">CONTACT US</Link></li>
                     </ul>
-                </div>
-               
+                </div> 
             </div>
             </div>
            

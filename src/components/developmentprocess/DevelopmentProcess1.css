@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400&display=swap');
+
+:root {
+    --bg-dark: #121212;
+    --bg-light: #1a1a1a;
+    --text-primary: #003366;
+    --text-secondary: #a0a0a0;
+    --accent-gold: #d4af37;
+    --border-color: #2a2a2a;
+}
+
+/* --- The key change is here --- */
+.dev-process-section {
+    /* background-color: var(--bg-dark); */
+    color: var(--text-primary);
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    /* Increased height creates the "scroll runway". 
+       400vh means it takes 4 full screen heights to scroll through. */
+    height: 400vh; 
+}
+
+.dev-process-sticky-container {
+    position: sticky;
+    top: 0;
+    /* This container will stick to the top for one screen height */
+    height: 100vh;
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Ensure content is vertically centered while sticky */
+    justify-content: center; 
+}
+
+.dev-process-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.dev-process-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #003366;
+    margin-bottom: 0.5rem;
+     font-family: 'Montserrat', sans-serif;
+}
+
+.dev-process-subtitle {
+    font-size: 1.2rem;
+    color: #a0a0a0;
+    letter-spacing: 1px;
+}
+
+.dev-timeline {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    position: relative;
+    /* Give the timeline a max height to ensure it fits on screen */
+    max-height: 80vh; 
+}
+
+.dev-timeline-progress {
+    position: relative;
+    width: 2px;
+    background-color: var(--border-color);
+    margin: 1rem 4rem 1rem 2rem;
+}
+
+.dev-timeline-progress-bar {
+    width: 100%;
+    background: linear-gradient(to bottom, #d4af37, #f0e68c);
+    transition: height 0.2s ease-out;
+}
+
+.dev-timeline-steps {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* Changed gap to space-around for better distribution */
+    justify-content: space-around; 
+}
+
+.dev-timeline-step {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.dev-timeline-step.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dev-timeline-icon-wrapper {
+    position: absolute;
+    left: -78px; /* Position relative to the timeline steps container */
+    top: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--bg-light);
+    border: 2px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.4s ease, background-color 0.4s ease;
+}
+
+.dev-timeline-icon-wrapper.active {
+    border-color: var(--accent-gold);
+    background-color: var(--bg-dark);
+}
+
+.dev-icon {
+    width: 24px;
+    height: 24px;
+    stroke: var(--text-secondary);
+    transition: stroke 0.4s ease, transform 0.4s ease;
+}
+
+.dev-timeline-icon-wrapper.active .dev-icon {
+    stroke: var(--accent-gold);
+    transform: scale(1.1);
+}
+
+.dev-timeline-content {
+    padding-left: 1rem;
+}
+
+.dev-step-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: var(--accent-gold);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.dev-step-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 0.75rem 0;
+}
+
+.dev-step-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    max-width: 500px;
+}
+
+@media (max-width: 768px) {
+    .dev-process-section {
+        height: auto; /* On mobile, revert to natural height */
+    }
+    .dev-process-sticky-container {
+        position: static; /* Disable sticky behavior on mobile */
+        height: auto;
+        padding: 4rem 1rem;
+    }
+    .dev-process-title {
+        font-size: 2.5rem;
+    }
+    .dev-timeline {
+        flex-direction: column;
+    }
+    .dev-timeline-progress {
+        display: none; /* Hide vertical progress bar on mobile */
+    }
+    .dev-timeline-steps {
+        gap: 4rem;
+    }
+    .dev-timeline-icon-wrapper {
+        position: static; /* Remove absolute positioning */
+        margin-bottom: 1.5rem;
+    }
+    .dev-timeline-step {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .dev-timeline-content {
+        padding-left: 0;
+    }
+}
