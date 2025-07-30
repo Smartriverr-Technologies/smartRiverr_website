@@ -17,7 +17,7 @@ const Login = ({ onLoginSuccess, onLoginFail }) => {
     onLoginFail(''); // Clear previous error messages
 
     try {
-      const response = await fetch('http://localhost:5001/api/login', {
+      const response = await fetch('https://smartriverr-backend.onrender.com/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -77,7 +77,7 @@ const AdminPanel = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await fetch('http://localhost:5001/api/posts');
+        const response = await fetch('https://smartriverr-backend.onrender.com/api/posts');
         const data = await response.json();
         setPosts(data);
       } catch (err) {
@@ -95,7 +95,7 @@ const AdminPanel = () => {
     setError('');
 
     try {
-      const response = await fetch('http://localhost:5001/api/posts', {
+      const response = await fetch('https://smartriverr-backend.onrender.com/api/posts', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
