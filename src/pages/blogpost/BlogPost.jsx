@@ -19,7 +19,7 @@ const BlogPage = () => {
     const fetchPosts = async () => {
       try {
         // Make sure your backend server is running!
-        const response = await fetch('http://localhost:5001/api/posts');
+        const response = await fetch('https://smartriverr-backend.onrender.com/api/posts');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
@@ -70,15 +70,20 @@ const BlogPage = () => {
           </button>
           <h1>{selectedPost.title}</h1>
           <div className="post-meta">
-            By {selectedPost.author} on {new Date(selectedPost.publishDate).toLocaleDateString()}
+            By {selectedPost.author} on {new Date(selectedPost.publishDate._seconds * 1000).toLocaleDateString()}
           </div>
-          <div className="post-content">{selectedPost.content}</div>
+          {/* <div className="post-content">{selectedPost.content}</div> */}
+          <div 
+  className="post-content" 
+  dangerouslySetInnerHTML={{ __html: selectedPost.content }}
+></div>
         </div>
       ) : (
         // --- BLOG LIST VIEW ---
         <>
           <div className="blog-header">
-            <h1>Our Blog</h1>
+            <h1>Our Blogs</h1>
+            <p>A space for deeper thinking and new perspectives</p>
           </div>
           <div className="blog-post-list">
             {posts.length > 0 ? (
@@ -90,12 +95,23 @@ const BlogPage = () => {
                 >
                   <h2>{post.title}</h2>
                   <div className="post-meta">
-                    By {post.author} on {new Date(post.publishDate).toLocaleDateString()}
+                    By {post.author} on {new Date(post.publishDate._seconds * 1000).toLocaleDateString()}
                   </div>
-                  <p>
-                    {/* Shows a short preview of the content */}
-                    {post.content.substring(0, 150)}...
-                  </p>
+                  <p className="post-excerpt">
+  {
+    // This creates a plain text preview
+    post.content.replace(/<[^>]*>?/gm, ' ').split(' ').slice(0, 20).join(' ')
+  }
+  {/* Add ellipsis if the original content was longer */}
+  {post.content.replace(/<[^>]*>?/gm, ' ').split(' ').length > 20 ? '...' : ''}
+</p>
+                  {/* This splits the text into words, takes the first 20, and joins them back */}
+  {/* {post.content.split(' ').slice(0, 20).join(' ')} */}
+
+  {/* This adds "..." only if the original text was longer than 20 words */}
+  {/* {post.content.split(' ').length > 20 ? '...' : ''} */}
+                  {/* <span><a className='read-more-btn classic'>Read more..</a></span> */}
+                   <a onClick={(e) => { e.stopPropagation(); handlePostSelect(post); }} className='read-more-btn classic'>Read more..</a>
                 </div>
               ))
             ) : (

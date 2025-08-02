@@ -13,6 +13,7 @@ import Applynow from './pages/applynow/Applynow.jsx';
 import WebDevelopment from './pages/webdevelopment/WebDevelopment.jsx';
 import Admin from './pages/admin/Admin.jsx';
 import BlogPost from './pages/blogpost/BlogPost.jsx';
+
 function App() {
   return (
     <>
@@ -30,6 +31,7 @@ function App() {
         <Route path='/web-development' element={<WebDevelopment/>}/>
         <Route path='/admin' element={<Admin/>}/>
         <Route path='/blogpost' element={<BlogPost/>}/>
+        
 
       </Routes>
     </Router>
