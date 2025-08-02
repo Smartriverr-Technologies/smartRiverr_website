@@ -66,7 +66,7 @@ const Navbar = () => {
                         </li>
 
                         <li className="dropdown mega-dropdown">
-  <span>SERVICES <MdKeyboardArrowDown /></span>
+  <li><Link to="">SERVICES<MdKeyboardArrowDown /></Link></li>
   <div className="mega-menu">
     <div className="mega-left">
       <h4>Application Solution</h4>
@@ -105,11 +105,11 @@ const Navbar = () => {
   </div>
 </li>
 
-
+                        <li><Link to="/blogpost">BLOGS</Link></li>
                         <li><Link to="/clients">CLIENTS</Link></li>
                         <li><Link to="/careers">CAREERS</Link></li>
                         <li><Link to="/contact">CONTACT US</Link></li>
-                        <li><Link to="/blog-post">BlogPost</Link></li>
+                        
                     </ul>
                 </div> 
             </div>

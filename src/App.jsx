@@ -11,8 +11,9 @@ import Careers from './pages/careers/Careers.jsx';
 import Contact from './pages/contactus/Contact.jsx';
 import Applynow from './pages/applynow/Applynow.jsx';
 import WebDevelopment from './pages/webdevelopment/WebDevelopment.jsx';
-import Admin from './pages/admin/Admin.jsx';
+// import Admin from './pages/admin/Admin.jsx';
 import BlogPost from './pages/blogpost/BlogPost.jsx';
+import Admin from './pages/admin/admin.jsx';
 
 function App() {
   return (

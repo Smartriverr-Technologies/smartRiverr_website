@@ -14,12 +14,12 @@
 }
 
 /* 3. Basic body styling */
-body {
+/* body {
   background-color: var(--page-bg);
     font-family: Arial, sans-serif;
   color: var(--primary-color);
   line-height: 1.7;
-}
+} */
 
 /* 4. Main container for the blog */
 .blog-container {
