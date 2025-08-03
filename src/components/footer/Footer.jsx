@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom';
 import Logo from '../../../public/Images/newLogo1.png';
 import './Footer.css';
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
@@ -15,15 +16,16 @@ const Footer = () => {
         </div>
 
         <div className="footer-col">
-          <h3>Pages</h3>
+          <h3>Quick Links</h3>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/services">Services</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About Us</Link></li>
+            <li><Link to="/web-development">Web Development</Link></li>
             {/* <li><a href="/portfolio">Portfolio</a></li>
             <li><a href="/testimonials">Testimonials</a></li> */}
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/careers">Careers</a></li>
+            <li><Link to="/blogpost">Blogs</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/careers">Careers</Link></li>
           </ul>
         </div>
 

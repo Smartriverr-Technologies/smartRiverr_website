@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './BlogPost.css'; // Import your CSS styles for the blog post page
 import Navbar from '../../components/navbar/Navbar';
+import Footer from '../../components/footer/Footer';
 // You can add this CSS to your existing stylesheet.
 
 
@@ -135,6 +136,7 @@ export default function BlogPost() {
       {/* <style>{styles}</style> */}
       <Navbar/>
       <BlogPage />
+      <Footer />
     </>
   );
 }
