@@ -52,9 +52,9 @@ const Footer = () => {
       <div className="footer-bottom">
         <p>© {new Date().getFullYear()} smartRiverr Technologies. All rights reserved.</p>
         <div className="footer-links">
-          <a href="#">Privacy Policy</a>
+          {/* <a href="#">Privacy Policy</a>
           <a href="#">Terms & Conditions</a>
-          <a href="#">Legal</a>
+          <a href="#">Legal</a> */}
         </div>
       </div>
     </footer>

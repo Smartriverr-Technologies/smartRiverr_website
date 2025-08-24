@@ -1,191 +1,418 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400&display=swap');
+
 
 :root {
-    --bg-dark: #121212;
-    --bg-light: #1a1a1a;
-    --text-primary: #003366;
-    --text-secondary: #a0a0a0;
-    --accent-gold: #d4af37;
-    --border-color: #2a2a2a;
+  /* Updated color tokens to match design brief */
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.35 0 0);
+  --card: oklch(0.98 0 0);
+  --card-foreground: oklch(0.35 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.35 0 0);
+  --primary: oklch(0.55 0.15 200);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.65 0.2 330);
+  --secondary-foreground: oklch(1 0 0);
+  --muted: oklch(0.98 0 0);
+  --muted-foreground: oklch(0.35 0 0);
+  --accent: oklch(0.65 0.2 330);
+  --accent-foreground: oklch(1 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.92 0 0);
+  --input: oklch(1 0 0);
+  --ring: oklch(0.55 0.15 200);
+  --chart-1: oklch(0.55 0.15 200);
+  --chart-2: oklch(0.65 0.2 330);
+  --chart-3: oklch(0.98 0 0);
+  --chart-4: oklch(0.35 0 0);
+  --chart-5: oklch(0.95 0.05 330);
+  --radius: 0.5rem;
+  --sidebar: oklch(0.98 0 0);
+  --sidebar-foreground: oklch(0.35 0 0);
+  --sidebar-primary: oklch(0.55 0.15 200);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.65 0.2 330);
+  --sidebar-accent-foreground: oklch(1 0 0);
+  --sidebar-border: oklch(0.92 0 0);
+  --sidebar-ring: oklch(0.55 0.15 200);
 }
 
-/* --- The key change is here --- */
-.dev-process-section {
-    /* background-color: var(--bg-dark); */
-    color: var(--text-primary);
-    font-family: 'Roboto', sans-serif;
-    position: relative;
-    /* Increased height creates the "scroll runway". 
-       400vh means it takes 4 full screen heights to scroll through. */
-    height: 400vh; 
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.145 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.145 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.65 0.15 200);
+  --primary-foreground: oklch(0.145 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.75 0.2 330);
+  --accent-foreground: oklch(0.145 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.269 0 0);
+  --ring: oklch(0.439 0 0);
+  --chart-1: oklch(0.65 0.15 200);
+  --chart-2: oklch(0.75 0.2 330);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.65 0.15 200);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.75 0.2 330);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
 }
 
-.dev-process-sticky-container {
-    position: sticky;
-    top: 0;
-    /* This container will stick to the top for one screen height */
-    height: 100vh;
-    padding: 6rem 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* Ensure content is vertically centered while sticky */
-    justify-content: center; 
+
+
+.development-process {
+  min-height: 100vh;
+  padding: 20px 0;
+  background: linear-gradient(135deg, var(--background) 0%, var(--card) 100%);
+  position: relative;
+  /* border:2px solid green; */
 }
 
-.dev-process-header {
-    text-align: center;
-    margin-bottom: 4rem;
+.development-process .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 70px;
+  /* border:2px solid blue; */
 }
 
-.dev-process-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    font-weight: 700;
-    color: #003366;
-    margin-bottom: 0.5rem;
-     font-family: 'Montserrat', sans-serif;
+.development-process .header {
+  text-align: center;
+  /* Reduced margin-bottom from 80px to 40px to decrease space between header and first stage */
+  /* Reduced margin-bottom to minimize space between header and first stage */
+  margin-bottom: 20px;
+  /* border:2px solid red; */
+  width: 100%;
+  /* height: 120px; */
 }
 
-.dev-process-subtitle {
-    font-size: 1.2rem;
-    color: #a0a0a0;
-    letter-spacing: 1px;
+.development-process .title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
 }
 
-.dev-timeline {
-    display: flex;
-    width: 100%;
-    max-width: 900px;
-    position: relative;
-    /* Give the timeline a max height to ensure it fits on screen */
-    max-height: 80vh; 
+.development-process .subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  color: #003366;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-weight: 400;
+
 }
 
-.dev-timeline-progress {
-    position: relative;
-    width: 2px;
-    background-color: var(--border-color);
-    margin: 1rem 4rem 1rem 2rem;
+.development-process .content {
+  display: flex;
+  gap: 100px;
+  align-items: flex-start;
+  position: relative;
 }
 
-.dev-timeline-progress-bar {
-    width: 100%;
-    background: linear-gradient(to bottom, #d4af37, #f0e68c);
-    transition: height 0.2s ease-out;
+/* Progress Sidebar */
+.development-process .progress-sidebar {
+  position: sticky;
+  top: 50vh;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 450px;
+  flex-shrink: 0;
+  /* Removed negative margin that was causing layout issues */
+  margin-top: 150px;
 }
 
-.dev-timeline-steps {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    /* Changed gap to space-around for better distribution */
-    justify-content: space-around; 
+.development-process .progress-track {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
 }
 
-.dev-timeline-step {
-    display: flex;
-    align-items: flex-start;
-    position: relative;
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.8s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+.development-process .progress-fill {
+  width: 100%;
+  background: linear-gradient(180deg, var(--primary) 0%, var(--accent) 100%);
+  border-radius: 2px;
+  transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.dev-timeline-step.in-view {
-    opacity: 1;
-    transform: translateY(0);
+.development-process .stage-indicators {
+  position: relative;
+  height: 100%;
 }
 
-.dev-timeline-icon-wrapper {
-    position: absolute;
-    left: -78px; /* Position relative to the timeline steps container */
-    top: 0;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: var(--bg-light);
-    border: 2px solid var(--border-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: border-color 0.4s ease, background-color 0.4s ease;
+.development-process .stage-indicator {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--muted);
+  border: 3px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 2;
 }
 
-.dev-timeline-icon-wrapper.active {
-    border-color: var(--accent-gold);
-    background-color: var(--bg-dark);
+.development-process .stage-indicator.active {
+  background: #003366;
+  /* border-color: var(--primary); */
+  transform: translate(-50%, -50%) scale(1.4);
+  /* box-shadow: 0 8px 25px rgba(8, 145, 178, 0.3); */
 }
 
-.dev-icon {
-    width: 24px;
-    height: 24px;
-    stroke: var(--text-secondary);
-    transition: stroke 0.4s ease, transform 0.4s ease;
+.development-process .stage-number {
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--muted-foreground);
+  transition: color 0.3s ease;
 }
 
-.dev-timeline-icon-wrapper.active .dev-icon {
-    stroke: var(--accent-gold);
-    transform: scale(1.1);
+.development-process .stage-indicator.active .stage-number {
+  color: var(--primary-foreground);
 }
 
-.dev-timeline-content {
-    padding-left: 1rem;
+/* Stages Content */
+.development-process .stages-content {
+  flex: 1;
+  padding-left: 40px;
+  /* Added negative margin to pull content closer to header */
+  margin-top: -20px;
 }
 
-.dev-step-number {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    color: var(--accent-gold);
-    margin-bottom: 0.5rem;
-    display: block;
+.development-process .stage {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+  /* Reduced padding from 60px to 30px to decrease vertical spacing between stages */
+  padding: 20px 0;
+  opacity: 0.4;
+  transform: translateY(20px);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  border-left: 3px solid transparent;
+  padding-left: 20px;
+  margin-left: -33px;
+    margin-bottom: 5px;
+  /* width: 100%; */
+  /* border:2px solid purple; */
 }
 
-.dev-step-title {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: #fff;
-    margin: 0 0 0.75rem 0;
+.development-process .stage.active {
+  opacity: 1;
+  transform: translateY(0);
+  border-left-color: #003366;
 }
 
-.dev-step-description {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: var(--text-secondary);
-    max-width: 500px;
+/* Updated stage icon styles to accommodate illustrations */
+.development-process .stage-illustration {
+  width: 220px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--card);
+  border-radius: 20px;
+  /* border: 2px solid var(--border); */
+  flex-shrink: 0;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  /* padding: 15px; */
 }
 
+.development-process .stage.active .stage-illustration {
+  /* background: var(--primary); */
+  /* border-color: var(--primary); */
+  transform: scale(1.05);
+  /* box-shadow: 0 10px 30px rgba(8, 145, 178, 0.2); */
+}
+
+.development-process .illustration-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: grayscale(0.3) opacity(0.8);
+}
+
+.development-process .stage.active .illustration-image {
+  filter: grayscale(0) opacity(1) brightness(1.1);
+}
+
+/* Remove old stage-icon styles as they're replaced by stage-illustration */
+.development-process .stage-icon {
+  display: none;
+}
+
+.development-process .stage-info {
+  flex: 1;
+  padding-top: 10px;
+  /* border:2px solid orange; */
+  width: 600px;
+  /* gap: 10px; */
+}
+
+.development-process .stage-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin-bottom: 15px;
+  letter-spacing: -0.01em;
+}
+
+.development-process .stage-description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.01rem;
+  color: var(--muted-foreground);
+  line-height: 1.42;
+  max-width: 600px;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    .dev-process-section {
-        height: auto; /* On mobile, revert to natural height */
-    }
-    .dev-process-sticky-container {
-        position: static; /* Disable sticky behavior on mobile */
-        height: auto;
-        padding: 4rem 1rem;
-    }
-    .dev-process-title {
-        font-size: 2.5rem;
-    }
-    .dev-timeline {
-        flex-direction: column;
-    }
-    .dev-timeline-progress {
-        display: none; /* Hide vertical progress bar on mobile */
-    }
-    .dev-timeline-steps {
-        gap: 4rem;
-    }
-    .dev-timeline-icon-wrapper {
-        position: static; /* Remove absolute positioning */
-        margin-bottom: 1.5rem;
-    }
-    .dev-timeline-step {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .dev-timeline-content {
-        padding-left: 0;
-    }
+  .development-process .title {
+    font-size: 2.25rem;
+  }
+
+  .development-process .subtitle {
+    font-size: 1.125rem;
+  }
+
+  .development-process .content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .development-process .progress-sidebar {
+    position: relative;
+    top: auto;
+    transform: none;
+    width: 100%;
+    height: 60px;
+    order: -1;
+  }
+
+  .development-process .progress-track {
+    width: 100%;
+    height: 4px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  .development-process .progress-fill {
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .development-process .stage-indicators {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+  }
+
+  .development-process .stage-indicator {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 35px;
+    height: 35px;
+  }
+
+  .development-process .stage-indicator.active {
+    transform: scale(1.1);
+  }
+
+  .development-process .stages-content {
+    padding-left: 0;
+  }
+
+  .development-process .stage {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+    margin-left: 0;
+    border-left: none;
+    border-top: 3px solid transparent;
+    padding-top: 43px;
+    margin-top: -3px;
+  }
+
+  .development-process .stage.active {
+    border-top-color: var(--primary);
+  }
+
+  .development-process .stage-illustration {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 12px;
+  }
+
+  .development-process .stage-title {
+    font-size: 1.5rem;
+  }
+
+  .development-process .stage-description {
+    font-size: 1rem;
+    max-width: none;
+  }
 }
+
+@media (max-width: 480px) {
+  .development-process {
+    padding: 60px 0;
+  }
+
+  .development-process .container {
+    padding: 0 15px;
+  }
+
+  .development-process .title {
+    font-size: 2rem;
+  }
+
+  .development-process .stage-illustration {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+  }
+
+  .development-process .stage-title {
+    font-size: 1.375rem;
+  }
+}
+
+
+
+
+
+
+

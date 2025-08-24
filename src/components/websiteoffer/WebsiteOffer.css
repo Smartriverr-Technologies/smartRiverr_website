@@ -48,7 +48,7 @@
 }
 
 .offers-title {
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     font-size: 2rem;
     font-weight: 700;
     color: var(--text-dark); /* Updated text color */
@@ -97,7 +97,7 @@
 
 .offer-card-icon {
     width: 250px;
-    height: 180px;
+    height: 190px;
     /* margin: 0 auto 1.5rem; */
     stroke: var(--accent-blue); /* Updated icon color */
     margin-bottom: 0px;

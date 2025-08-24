@@ -1,9 +1,11 @@
 import React, { useRef, useEffect } from 'react';
 import './WebsiteOffer.css';
 import WebApplication from '../../../public/Images/WebApplication.svg'; 
-import Ecommerce from '../../../public/Images/Ecommerce.svg'
+import WebDesigning from '../../../public/Images/WebDesigning.svg'
+import Ecommerce from '../../../public/Images/E4.svg'
 import CRM1 from '../../../public/Images/CRM1.svg'; 
 import WebsiteMaintenance from '../../../public/Images/WebsiteMaintenance.svg';
+import W4 from '../../../public/Images/W4.svg';
 // import { image } from 'framer-motion/client';
 
 // --- SVG Icons for each website type ---
@@ -27,7 +29,7 @@ const offers = [
         icon: <EcommerceIcon />,
         title: 'Web Application Development',
         description: 'Bespoke online stores designed to maximize conversions, featuring secure payments and intuitive inventory management.',
-        image: WebApplication
+        image: WebDesigning
     },
     {
         icon: <PortfolioIcon />,
@@ -38,7 +40,8 @@ const offers = [
     {
         icon: <CorporateIcon />,
         title: 'Wordpress and shopify website ',
-        description: 'Professional, scalable websites that build brand credibility, generate leads, and communicate your company’s value.'
+        description: 'Professional, scalable websites that build brand credibility, generate leads, and communicate your company’s value.',
+        image: W4
     },
     {
         icon: <WebAppIcon />,

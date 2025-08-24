@@ -14,7 +14,7 @@ import WebDevelopment from './pages/webdevelopment/WebDevelopment.jsx';
 // import Admin from './pages/admin/Admin.jsx';
 import BlogPost from './pages/blogpost/BlogPost.jsx';
 import Admin from './pages/admin/admin.jsx';
-
+import FloatingButton from './components/FloatingButton/FloatingButton.jsx';
 function App() {
   return (
     <>
@@ -35,6 +35,7 @@ function App() {
         
 
       </Routes>
+      <FloatingButton/>
     </Router>
      
 
