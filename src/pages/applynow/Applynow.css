@@ -3,11 +3,11 @@
   background-image: url('/Images/applynowimage.jpg'); /* Place image in public folder */
   background-size: cover;
   background-position: right center;
-  height: 70vh;
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  margin-top: 110px;
 }
 
 .apply-now-overlay {

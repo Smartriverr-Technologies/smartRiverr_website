@@ -2,10 +2,11 @@
   background-size: cover;
   background-position: center right;
   position: relative;
-  height: 70vh;
+  height: 60vh;
   display: flex;
   align-items: center;
   color: #fff;
+  margin-top: 110px;
   /* background: linear-gradient(to right, rgba(0, 51, 102, 0.9) 35%, rgba(0, 51, 102, 0.1) 70%); */
 }
 
