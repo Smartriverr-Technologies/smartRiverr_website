@@ -49,7 +49,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="footer-bottom">
+      <div className="footer-bottom" style={{color: "#aaa;"}}>
         <p>© {new Date().getFullYear()} smartRiverr Technologies. All rights reserved.</p>
         <div className="footer-links">
           {/* <a href="#">Privacy Policy</a>

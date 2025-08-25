@@ -74,9 +74,10 @@ const Navbar = () => {
         {/* Menu Links */}
         <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
           <li><Link to="/" onClick={handleLinkClick}>HOME</Link></li>
+          <li><Link to="/about-us" onClick={handleLinkClick}>ABOUT US</Link></li>
 
           {/* ABOUT US */}
-          <li className={`dropdown ${openDropdown === 'about' ? 'open' : ''}`}>
+          {/* <li className={`dropdown ${openDropdown === 'about' ? 'open' : ''}`}>
             <div className="dropdown-header">
               <Link to="/about" onClick={window.innerWidth > 992 ? handleLinkClick : (e) => e.preventDefault()}>ABOUT US</Link>
               <MdKeyboardArrowDown
@@ -88,7 +89,7 @@ const Navbar = () => {
               <Link to="/company" onClick={handleLinkClick}>Company</Link>
               <Link to="/team" onClick={handleLinkClick}>Team</Link>
             </div>
-          </li>
+          </li> */}
 
           {/* SERVICES (Mega Menu) */}
           <li className={`dropdown mega-dropdown ${openDropdown === 'services' ? 'open' : ''}`}>
@@ -101,38 +102,40 @@ const Navbar = () => {
             </div>
             <div className="mega-menu">
               <div className="mega-left">
-                <h4>Application Solution</h4>
-                <p>Empowering businesses with innovative application solutions.</p>
-                <h4>Digital Marketing</h4>
-                <p>Optimize online visibility and grow business with our digital solutions.</p>
-                <h4>Design Solution</h4>
-                <p>Transform your vision into captivating designs that engage your audience.</p>
-              </div>
+  <h3>Application Development</h3>
+  <p>Delivering custom-built applications that drive efficiency and innovation.</p>
+
+  <h3>Digital Growth</h3>
+  <p>Boost your online presence and expand reach with digital strategies.</p>
+
+  <h3>Creative Design</h3>
+  <p>Turning ideas into visually stunning designs that connect your audience.</p>
+</div>
               <div className="mega-right">
-                <Link to="/web-development" className="mega-box" onClick={handleLinkClick}>
+                <Link to="/web-development"><div className="mega-box" onClick={handleLinkClick}>
                   <h5>Web Development</h5>
                   <p>Create intuitive, engaging, and high-quality web applications.</p>
-                </Link>
-                <div className="mega-box">
+                </div></Link>
+                <Link to="/mobile-app-development"><div className="mega-box">
                   <h5>Mobile App Development</h5>
                   <p>Create dynamic iOS and Android apps for large audiences.</p>
-                </div>
-                <div className="mega-box">
-                  <h5>Custom Application</h5>
+                </div></Link>
+                <Link to="/custom-application"><div className="mega-box">
+                  <h5>Custom Application Solutions</h5>
                   <p>Enhance functionality with powerful APIs and integrations.</p>
-                </div>
-                <div className="mega-box">
+                </div></Link>
+                <Link to="/digital-marketing"><div className="mega-box">
                   <h5>Digital Marketing</h5>
                   <p>Automate workflows using custom AI/ML models.</p>
-                </div>
-                <div className="mega-box">
+                </div></Link>
+               <Link to="/saas-applications"> <div className="mega-box">
                   <h5>SaaS Application</h5>
                   <p>Build scalable SaaS products tailored to your users.</p>
-                </div>
-                <div className="mega-box">
+                </div></Link>
+                <Link to="/api-development"><div className="mega-box">
                   <h5>API Development</h5>
                   <p>Integrate robust APIs to optimize performance and flexibility.</p>
-                </div>
+                </div></Link>
               </div>
             </div>
           </li>

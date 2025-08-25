@@ -17,7 +17,7 @@ export default function FloatingButton() {
 
       {/* Call Button */}
       <a href="tel:+919458305670" className="float-btn call">
-        <FaPhoneAlt className="icon" />
+        <FaPhoneAlt className="icon1" />
       </a>
     </div>
   );

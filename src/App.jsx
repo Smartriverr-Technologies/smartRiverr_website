@@ -15,6 +15,11 @@ import WebDevelopment from './pages/webdevelopment/WebDevelopment.jsx';
 import BlogPost from './pages/blogpost/BlogPost.jsx';
 import Admin from './pages/admin/admin.jsx';
 import FloatingButton from './components/FloatingButton/FloatingButton.jsx';
+import MobileApp from './pages/mobileappdevelopment/MobileApp.jsx';
+import CustomApplications from './pages/customapplications/CustomApplications.jsx';
+import DigitalMarketing from './pages/digitalmarketing/DigitalMarketing.jsx';
+import SaasApplications from './pages/saasapplications/SaasApplications.jsx';
+import ApiDevelopment from './pages/apidevelopment/ApiDevelopment.jsx';
 function App() {
   return (
     <>
@@ -23,7 +28,7 @@ function App() {
     <Router>
       <Routes>
         <Route path='/' element={<Homepage/>}/>
-        <Route path='/about' element={<About/>}/>
+        <Route path='/about-us' element={<About/>}/>
         <Route path='/clients' element={<Clients/>}/>
         <Route path='/services' element={<Services/>}/>
         <Route path='/careers' element={<Careers/>}/>
@@ -32,6 +37,11 @@ function App() {
         <Route path='/web-development' element={<WebDevelopment/>}/>
         <Route path='/admin' element={<Admin/>}/>
         <Route path='/blogpost' element={<BlogPost/>}/>
+        <Route path='/mobile-app-development' element={<MobileApp/>}/>
+        <Route path='/custom-application' element={<CustomApplications/>}/>
+        <Route path='/digital-marketing' element={<DigitalMarketing/>}/>
+        <Route path='/saas-applications' element={<SaasApplications/>}/>
+        <Route path='/api-development' element={<ApiDevelopment/>}/>
         
 
       </Routes>
