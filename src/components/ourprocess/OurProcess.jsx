@@ -70,6 +70,7 @@ const OurProcess = () => {
                 <h3>{step.title}</h3>
                 <div className="title-underline" />
                 <p>{step.description}</p>
+
               </div>
             </div>
           </div>

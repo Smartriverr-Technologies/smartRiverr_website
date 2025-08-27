@@ -20,6 +20,7 @@ import CustomApplications from './pages/customapplications/CustomApplications.js
 import DigitalMarketing from './pages/digitalmarketing/DigitalMarketing.jsx';
 import SaasApplications from './pages/saasapplications/SaasApplications.jsx';
 import ApiDevelopment from './pages/apidevelopment/ApiDevelopment.jsx';
+// import Test from './components/Test/Test.jsx';
 function App() {
   return (
     <>
@@ -42,6 +43,8 @@ function App() {
         <Route path='/digital-marketing' element={<DigitalMarketing/>}/>
         <Route path='/saas-applications' element={<SaasApplications/>}/>
         <Route path='/api-development' element={<ApiDevelopment/>}/>
+        <Route path='*' element={<h1>404 Not Found</h1>}/>
+        {/* <Route path='/test' element={<Test/>}/> */}
         
 
       </Routes>
